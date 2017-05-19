@@ -1,32 +1,23 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>BurningAirlines</title>
-    <%= csrf_meta_tags %>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-
-  <body>
-    <div class="container"> 
-    
+ <head>
+   <title>BurningAirlines</title>
+   <%= csrf_meta_tags %>
+   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js" rel="javascripts">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.3.0/css/flat-ui.min.css">
+   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+ </head>  <body>
+   <div class="container">      
       <nav class="navbar navbar-inverse">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="#">Burning Airlines</a>
-          </div>
-          <ul class="nav navbar-nav">
-            <li><%= link_to("Planes", airplanes_path)  %></li>
-            <li><%= link_to("Flights", flights_path)  %></li>
-          </ul>
-      </nav>
-
-      <main class="jumbotron">
-      <%= yield %>
-      </main>
-
-    </div>
-  </body>
-
-  
-</html>
+         <div class="navbar-header">
+           <a class="navbar-brand" href="#">Burning Airlines</a>
+         </div>
+         <ul class="nav navbar-nav">
+           <li><%= link_to("Planes", airplanes_path)  %></li>
+           <li><%= link_to("Flights", flights_path)  %></li>
+         </ul>
+     </nav>      <main class="jumbotron">
+     <!-- <a href="https://github.com/aakashbapna/jet-planes"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a> -->      <%= yield %>      </main>    </div>
+ </body></html>
