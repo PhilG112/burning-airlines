@@ -26,9 +26,9 @@ Flight.destroy_all
 
 10.times do |i|
     Flight.create({
-        flight_number: "flight_no#{i}",
-        origin: "origin #{i}",
-        destination: "destination #{i}",
+        flight_number: "10#{i}",
+        origin: "SYD",
+        destination: "USA",
         flight_date: Date.today,
         airplane_id: a1.id
     })
@@ -38,29 +38,15 @@ puts "The flight"
 # puts "The #{airplane_id} #{flight_number} will fly from #{origin} to #{destination} at " + Date.today
 end
 
-Flight.create({
-    flight_number: "flight_no0",
-    origin: "origin 0",
-    destination: "destination 1",
-    flight_date: Date.today,
-    airplane_id: a1.id
-})
-
-Flight.create({
-    flight_number: "flight_no0",
-    origin: "origin 0",
-    destination: "destination 2",
-    flight_date: Date.today,
-    airplane_id: a1.id
-})
-
-Flight.create({
-    flight_number: "flight_no0",
-    origin: "origin 0",
-    destination: "destination 3",
-    flight_date: Date.today,
-    airplane_id: a1.id
-})
+10.times do |i| 
+    Flight.create({
+        flight_number: "13#{i}",
+        origin: "UAE",
+        destination: "ZUR",
+        flight_date: Date.today,
+        airplane_id: a2.id
+    })
+end
 
 
 User.destroy_all

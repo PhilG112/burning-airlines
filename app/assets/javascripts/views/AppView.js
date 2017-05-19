@@ -8,8 +8,8 @@ app.AppView = Backbone.View.extend({
   },
 
   filterFlights: function() {
-    var from = $("#from").val();
-    var to = $("#to").val();
+    var from = $("#from").val().toUpperCase();
+    var to = $("#to").val().toUpperCase();
     if( from === "" || to === "") {
       return;
     } else {
